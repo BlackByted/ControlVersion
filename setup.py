@@ -4,8 +4,8 @@ readme = open("./README.md", "r")
 
 
 setup(
-    name='src',
-    packages=['src'],  # this must be the same as the name above
+    name='controlversion',
+    packages=['controlversion'],  # this must be the same as the name above
     version='0.1',
     description='Esta es la descripcion de mi paquete',
     long_description=readme.read(),
