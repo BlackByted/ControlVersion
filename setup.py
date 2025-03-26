@@ -6,7 +6,7 @@ readme = open("./README.md", "r")
 setup(
     name='controlversion',
     packages=['controlversion'],  # this must be the same as the name above
-    version='0.1',
+    version='0.2',
     description='Esta es la descripcion de mi paquete',
     long_description=readme.read(),
     long_description_content_type='text/markdown',
@@ -18,5 +18,9 @@ setup(
     keywords=['testing', 'logging', 'example'],
     classifiers=[ ],
     license='MIT',
-    include_package_data=True
+    include_package_data=True,
+    install_requires=[
+        'GitPython==3.1.44',
+        'python-gitlab==5.6.0'
+    ]
 )
